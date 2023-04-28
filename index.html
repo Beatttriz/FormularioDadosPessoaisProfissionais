@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+</head>
+<link rel="stylesheet" href="style.css">
+    <body>
+        <div class="content">
+            <form action="">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="row">
+                        <label for="Nome">Nome:</label>
+                        <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="Sobrenome">Sobrenome:</label>
+                        <input type="text" name="Sobrenome" id="Sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="E-mail">E-mail:</label>
+                        <input type="E-mail" name="E-mail" id="E-mail" placeholder="Digite seu E-mail" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="Datanascimento">Data de nascimento:</label>
+                        <input type="date" name="Datanascimento" id="Datanascimento" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="Estadocivil">Estado civil:</label>
+                        <input type="radio" name="Estadocivil" value="Casado" id="Casado" required>
+                        <label for="Casado">Casado</label>
+                        <input type="radio" name="Estadocivil" value="Solteiro" id="Solteiro" required>
+                        <label for="Solteiro">Solteiro</label>
+                    </div>
+
+                    <div class="row">
+                        <label for="Filhos">Filhos</label>
+                        <input type="number" name="Filhos" id="Filhos" max="10" min="0">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados Profissionais</legend>
+                    <div class="row">
+                        <p>Selecione as Linguagens que você conhece:</p>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="PHP" id="PHP">
+                        <label for="PHP">PHP</label>
+                        <input type="checkbox" name="Java" id="Java">
+                        <label for="Java">Java</label>
+                        <input type="checkbox" name="C#" id="C#">
+                        <label for="C#">C#</label>
+                    </div>
+
+                    <div class="row">
+                        <label for="Sobre">Fale sobre você:</label>
+                    </div>
+
+                    <div class="row">
+                        <textarea name="Sobre" id="Sobre" cols="30" rows="5" placeholder="Descreva suas habilidades">
+                        </textarea>
+                    </div>
+
+                    <div>
+                        <label for="Arquivo">Carregue seu currículo:</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="file" name="Arquivo" id="Arquivo">
+                    </div>
+
+                </fieldset>
+                
+                <div class="buttons">
+                    <input type="submit" name="Enviar" id="Enviar">
+                    <input type="reset" value="Limpar" name="Limpar" id="Limpar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

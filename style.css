@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: #040004;
+    line-height: 1.5;
+}
+body{
+    background: plum;
+    background: palevioletred;
+}
+.content{
+    background-color: white;
+    width: 720px;
+    padding: 20px;
+    margin: 20px auto 0 auto;
+    box-shadow: 0px 6px 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.row{
+    padding: 5px;
+}
+.buttons{
+    text-align: center;
+}
+fieldset{
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-color: #c2cbce;
+    box-shadow: 2px 2px 2px #c2cbce;
+}
+legend{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label:not([for="casado"], [for="solteiro"], [for="java"], [for="php"], [for="c#"]){
+    display: inline-block;
+    width: 120px;
+}
+input{
+    padding: 2px;
+    outline: none;
+}
+input[id="Nome"],
+input[id="Sobrenome"],
+input[id="E-mail"]{
+    width: 480px;
+    transition: 0.5s;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="E-mail"]{
+    border: none;
+    border-bottom: 2px solid #c2cbce;
+    transition: 0.2s all ease-in-out;
+}
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="E-mail"]:focus{
+    color: pink;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-color: pink;
+}
+textarea{
+    padding: 10px;
+    resize: none;
+    outline: none;
+    width: 100%;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type="submit"],
+input[type="reset"]{
+    padding: 5px 10px;
+    background-color: pink;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    transform: scale(1.1);
+}
+label[for="Java"],
+label[for="PHP"],
+label[for="C#"]{
+    border: 1px solid #040004;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    transition: 0.2s all ease-in-out;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked+label{
+    background-color: pink;
+}
+label[for="Java"]:hover,
+label[for="PHP"]:hover,
+label[for="C#"]:hover,
+input[type="submit"],
+input[type="reset"]{
+    cursor: pointer;
+}
